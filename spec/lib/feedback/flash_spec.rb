@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
-describe Feedback::Flash do
+describe Feedback::Flash, :type => :controller do
   before(:each) do
     @helper = Class.new do
       include ActionView::Helpers::TagHelper
